@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="MainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyq" translatesAutoresizingMaskIntoConstraints="NO" id="Ph7-Mw-Opw">
+                        <rect key="frame" x="12" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="4yx-vi-Cao"/>
+                            <constraint firstAttribute="height" constant="30" id="YL6-VG-3mW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwA-Pc-A2c">
+                        <rect key="frame" x="58" y="21" width="45" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ph7-Mw-Opw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="4LS-32-i0h"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ph7-Mw-Opw" secondAttribute="bottom" constant="4" id="Anh-Ul-Ekl"/>
+                    <constraint firstItem="Ph7-Mw-Opw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HNR-5C-qfT"/>
+                    <constraint firstItem="nwA-Pc-A2c" firstAttribute="centerY" secondItem="Ph7-Mw-Opw" secondAttribute="centerY" id="RdC-1Q-CGF"/>
+                    <constraint firstItem="Ph7-Mw-Opw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="YUN-NB-voj"/>
+                    <constraint firstItem="nwA-Pc-A2c" firstAttribute="leading" secondItem="Ph7-Mw-Opw" secondAttribute="trailing" constant="16" id="enN-84-6SH"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Anh-Ul-Ekl"/>
+                        <exclude reference="YUN-NB-voj"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImg" destination="Ph7-Mw-Opw" id="agP-BN-wdu"/>
+                <outlet property="itemNameLab" destination="nwA-Pc-A2c" id="d2z-SY-00a"/>
+            </connections>
+            <point key="canvasLocation" x="339.5" y="451.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pyq" width="64" height="64"/>
+    </resources>
+</document>
