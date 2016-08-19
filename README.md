@@ -1,0 +1,2 @@
+# STTableViewBackgroungImg
+为TableView添加背景图片，且背景不会随Tableview的滚动而动
